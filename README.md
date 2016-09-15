@@ -1,4 +1,5 @@
 # zlogjs-http-logger
+<<<<<<< HEAD
 
 
 log http request, response, locally or on a remote server.
@@ -21,3 +22,6 @@ log http request, response, locally or on a remote server.
 ##DESCRIPTION
 zlogjs-http-logger is a plugin for zlogjs-adapter to log native http server requests and responses.<br/>
  `zlogjs-http-logger` is build for [zlogjs-adapter](https://github.com/Emallates/zlogjs-adapter) just for experimental purposes.<br/>
+=======
+log http request, response, locally or on a remote server.
+>>>>>>> 2232a28208fa3dbbe4ead590bc8e44eaebd628ee
