@@ -1,6 +1,6 @@
 {
   "name": "zlogjs-http-logger",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Log http request, and responses and can be used as a plugin for zlogjs-adapter",
   "main": "./lib/logger.js",
   "scripts": {
@@ -25,6 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "on-finished": "^2.3.0",
-    "on-headers": "^1.0.1"
+    "on-headers": "^1.0.1",
+    "async-waterfall":"*"
   }
 }
