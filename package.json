@@ -4,7 +4,7 @@
   "description": "Log http request, and responses and can be used as a plugin for zlogjs-adapter",
   "main": "./lib/logger.js",
   "scripts": {
-    "test": "node test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,12 @@
   "homepage": "https://github.com/Emallates/zlogjs-http-logger#readme",
   "author": "zeeshan <zeeshan.emallates@gmail.com>",
   "license": "MIT",
+  "devDependencies":{
+    "mocha":"*",
+    "enoa-client":"*",
+    "zlogjs-adapter":"*",
+    "zlogjs-http-logger":"*"
+  },
   "dependencies": {
     "on-finished": "^2.3.0",
     "on-headers": "^1.0.1",
