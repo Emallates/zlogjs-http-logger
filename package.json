@@ -1,6 +1,6 @@
 {
   "name": "zlogjs-http-logger",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Log http request, and responses and can be used as a plugin for zlogjs-adapter",
   "main": "./lib/logger.js",
   "scripts": {
