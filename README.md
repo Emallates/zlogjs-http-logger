@@ -17,15 +17,22 @@ log http request, response, locally or on a remote server.
 [license-url]: https://raw.githubusercontent.com/Emallates/zlogjs-http-logger/master/LICENSE
 
 ##DESCRIPTION
-zlogjs-http-logger is a plugin for zlogjs-adapter to log native http server requests and responses for nodejs applications.<br/>
+zlogjs-http-logger is a plugin for [zlogjs-adapter](https://github.com/Emallates/zlogjs-adapter) to log native http server requests and responses for nodejs applications.<br/>
 log http request, response, locally or on a remote server.
 
-## Table of Contents
+<!--NO_HTML-->
+Table of Contents
+-----------------
+
 1. [Installation](#installation)
-2. [Configuration](#configuration)
-3. [Log](#log)
-4. [Issues and Suggestions](#issues-and-suggestions)
-5. [License](#license)
+1. [Configuration](#configuration)
+1. [Log](#log)
+	- [Global](#global)
+	- [Specific](#specific)
+1. [Issues and Suggestions](#issues-and-suggestions)
+1. [License](#license)
+
+<!--/NO_HTML-->
 
 ## Installation
 ```bash
@@ -52,7 +59,7 @@ var config = {
 To start using this logger you need to construct it from [zlogjs-adapter](https://github.com/Emallates/zlogjs-adapter) and [enoa-client](https://github.com/Emallates/enoa-client).
 Then you need to include it inside the http server of your application. Parameters request, response are the same objects you need to pass
 and from these parameters false option will stay as it is if you are using this logger on exit point of every request. 
-### Global
+#### Global
 ```javascript
 var logger = require('enoa-client')(config).adapter.logger;
 http.createServer(function (req, res, next) {
@@ -60,7 +67,7 @@ http.createServer(function (req, res, next) {
 });
 
 ```
-### Specific
+#### Specific
 ```javascript
 logger(req, res, res.body, true, CallbackFn);
 ```
